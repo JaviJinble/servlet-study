@@ -9,6 +9,7 @@ import java.io.IOException;
 
 @WebServlet("/lifecircle")
 public class LifecircleServlet extends HelloServlet {
+
     @Override
     public void init(ServletConfig config) throws ServletException {
         System.out.println("객체 생성 및 초기화");
