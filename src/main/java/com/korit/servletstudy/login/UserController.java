@@ -15,9 +15,9 @@ public class UserController extends HttpServlet {
     private UserService userService;
 
     @Override
-    public void init(ServletConfig config) throws ServletException {
-       UserRepository userRepository = new UserRepository(config.getServletContext());
-       UserService userService = new UserService(userRepository);
+    public void init(ServletConfig config) {
+        UserRepository userRepository = new UserRepository(config.getServletContext());
+        userService = new UserService(userRepository);
     }
 
     @Override
